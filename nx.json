@@ -1,0 +1,19 @@
+{
+  "npmScope": "test",
+  "targetDependencies": {
+    "buildz": [
+      {
+        "target": "generate-sources",
+        "projects": "self"
+      },
+      {
+        "target": "build",
+        "projects": "dependencies"
+      }
+    ]
+  },
+  "projects": {
+    "one": {},
+    "two": {}
+  }
+}
