@@ -30,7 +30,7 @@ The task fails because project "one" does not have a `generate-sources` target.
 
 # summary
 
-It's common to have so-called "optional" targets. These are targets that some projects may define and others may not. Generation of sources is a perfect example. Some project may need to generate code before building, while others may not.
+It's common to have so-called "optional" targets. These are targets that some projects may define and others may not. Generation of sources is a perfect example. Some projects may need to generate code before building, while others may not.
 
 Projects can define dependencies at the project level using "dependsOn", and in that case, this type of failure makes perfect sense. But in a workspace with hundreds of projects, that becomes very onerous and error-prone. It would be much easier to use the "targetDependencies" mechanism, but as things stand today, every project must have the dependent target defined, even if it does nothing.
 
