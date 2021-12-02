@@ -1,0 +1,18 @@
+{
+  "root": "two",
+  "implicitDependencies": ["one"],
+  "targets": {
+    "generate-sources": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": ["true"]
+      }
+    },
+    "build": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": ["true"]
+      }
+    }
+  }
+}

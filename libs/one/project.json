@@ -1,0 +1,11 @@
+{
+  "root": "one",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": ["true"]
+      }
+    }
+  }
+}

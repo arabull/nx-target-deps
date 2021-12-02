@@ -1,7 +1,12 @@
 {
   "npmScope": "test",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default"
+    }
+  },
   "targetDependencies": {
-    "buildz": [
+    "build": [
       {
         "target": "generate-sources",
         "projects": "self"
@@ -11,9 +16,5 @@
         "projects": "dependencies"
       }
     ]
-  },
-  "projects": {
-    "one": {},
-    "two": {}
   }
 }
